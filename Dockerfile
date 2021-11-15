@@ -4,7 +4,7 @@ RUN mkdir /var/flaskapp/
 
 WORKDIR /var/flaskapp/
 
-COPY /root/buildpyflaskimage/app/ .
+COPY ./app/ .
 
 RUN apk update && apk add --no-cache python3
 
